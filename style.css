@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+div {
+  border: 1px solid red;
+}
+
+table,
+th,
+td {
+  border: 1px solid silver;
+  border-collapse: collapse;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.input-form-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.button-wrapper {
+  display: flex;
+  align-self: flex-end;
+}

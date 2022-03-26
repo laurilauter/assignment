@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome test</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Palindrome test</h1>
+      </div>
+      <!-- INPUT -->
+      <div class="input">
+        <h3>Input</h3>
+        <div class="input-form-wrapper">
+          <div>
+            <p>Input word</p>
+            <input type="text" required />
+          </div>
+          <div>
+            <p>Expected result</p>
+            <input type="radio" value="true" checked />
+            <label for="true">true</label>
+            <input type="radio" value="false" />
+            <label for="false">false</label>
+          </div>
+          <div class="button-wrapper">
+            <button type="button">TEST</button>
+          </div>
+        </div>
+      </div>
+      <!-- OUTPUT -->
+      <div class="output">
+        <h3>Output</h3>
+        <table>
+          <tr>
+            <th>Sequence number</th>
+            <th>Input word</th>
+            <th>Expected result === actual result</th>
+          </tr>
+          <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- Add a css file and make the table horizontally scrollable -->
+    <script src="script.js"></script>
+  </body>
+</html>

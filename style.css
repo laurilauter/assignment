@@ -1,9 +1,14 @@
 body {
   margin: 0;
+  font-family: "Roboto";
 }
 
-div {
+/* div {
   border: 1px solid red;
+} */
+
+.red-border {
+  border: 1px solid indianred;
 }
 
 table,
@@ -11,6 +16,33 @@ th,
 td {
   border: 1px solid silver;
   border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: indianred;
+}
+
+@media (max-width: 600px) {
+  .table-container {
+    width: 100% !important;
+    overflow-x: scroll;
+  }
+
+  tr td:nth-child(2) {
+    min-width: 200px;
+  }
+  tr td:nth-child(3) {
+    min-width: 150px;
+  }
 }
 
 .container {
@@ -26,4 +58,12 @@ td {
 .button-wrapper {
   display: flex;
   align-self: flex-end;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.margin-30 {
+  margin: 30px;
 }

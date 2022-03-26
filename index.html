@@ -8,50 +8,60 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <div>
+    <div class="container margin-30">
+      <div class="margin-10">
         <h1>Palindrome test</h1>
       </div>
       <!-- INPUT -->
-      <div class="input">
-        <h3>Input</h3>
+      <div class="input margin-10">
+        <h3 class="margin-10">Input</h3>
         <div class="input-form-wrapper">
-          <div>
+          <div class="margin-10">
             <p>Input word</p>
-            <input type="text" required />
+            <input
+              id="input-word"
+              placeholder="Type here.."
+              type="text"
+              required
+            />
           </div>
-          <div>
+          <div class="margin-10">
             <p>Expected result</p>
-            <input type="radio" value="true" checked />
-            <label for="true">true</label>
-            <input type="radio" value="false" />
-            <label for="false">false</label>
+
+            <input
+              type="radio"
+              id="true"
+              name="assumption"
+              value="true"
+              checked
+            />
+            <label for="true">True</label>
+            <input type="radio" id="false" name="assumption" value="false" />
+            <label for="false">False</label>
           </div>
-          <div class="button-wrapper">
-            <button type="button">TEST</button>
+          <div class="button-wrapper margin-10">
+            <button id="test-button" type="button">TEST</button>
           </div>
         </div>
       </div>
       <!-- OUTPUT -->
-      <div class="output">
-        <h3>Output</h3>
-        <table>
-          <tr>
-            <th>Sequence number</th>
-            <th>Input word</th>
-            <th>Expected result === actual result</th>
-          </tr>
-          <tr>
-            <td>Emil</td>
-            <td>Tobias</td>
-            <td>Linus</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>14</td>
-            <td>10</td>
-          </tr>
-        </table>
+      <div class="output margin-10">
+        <h3 class="margin-10">Output</h3>
+        <button class="margin-10" id="default-button" type="button">
+          DEFAULT TESTS
+        </button>
+        <button class="margin-10" id="clear-button" type="button">
+          CLEAR RESULTS
+        </button>
+        <div class="table-container">
+          <table>
+            <tr>
+              <th>Sequence number</th>
+              <th>Input word</th>
+              <th>Expected result === actual result</th>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <!-- Add a css file and make the table horizontally scrollable -->

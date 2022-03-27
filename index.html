@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palindrome test</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container margin-30">
-      <div class="margin-10">
+    <div class="container">
+      <div>
         <h1>Palindrome test</h1>
       </div>
       <!-- INPUT -->
-      <div class="input margin-10">
-        <h3 class="margin-10">Input</h3>
+      <div class="input section-style">
+        <h2 class="margin-10">Input</h2>
         <div class="input-form-wrapper">
-          <div class="margin-10">
+          <div class="input-field">
             <p>Input word</p>
             <input
               id="input-word"
@@ -25,38 +31,43 @@
               required
             />
           </div>
-          <div class="margin-10">
-            <p>Expected result</p>
+          <div class="radio-field">
+            <div class="radio-header">
+              <p>Expected result</p>
+            </div>
 
-            <input
-              type="radio"
-              id="true"
-              name="assumption"
-              value="true"
-              checked
-            />
-            <label for="true">True</label>
-            <input type="radio" id="false" name="assumption" value="false" />
-            <label for="false">False</label>
+            <div class="radio-button-field">
+              <input
+                type="radio"
+                id="true"
+                name="assumption"
+                value="true"
+                checked
+              />
+              <label class="p" for="true">True</label>
+              <input type="radio" id="false" name="assumption" value="false" />
+              <label class="p" for="false">False</label>
+            </div>
           </div>
-          <div class="button-wrapper margin-10">
-            <button id="test-button" type="button">TEST</button>
+
+          <div class="button-wrapper">
+            <button id="test-button" type="button">RUN TEST</button>
           </div>
         </div>
       </div>
       <!-- OUTPUT -->
-      <div class="output margin-10">
-        <h3 class="margin-10">Output</h3>
-        <button class="margin-10" id="default-button" type="button">
+      <div class="output section-style">
+        <h2 class="margin-10">Output</h2>
+        <button class="button" id="default-button" type="button">
           DEFAULT TESTS
         </button>
-        <button class="margin-10" id="clear-button" type="button">
+        <button class="danger-button" id="clear-button" type="button">
           CLEAR RESULTS
         </button>
         <div class="table-container">
           <table>
             <tr>
-              <th>Sequence number</th>
+              <th>Number</th>
               <th>Input word</th>
               <th>Expected result === actual result</th>
             </tr>
@@ -65,6 +76,6 @@
       </div>
     </div>
     <!-- Add a css file and make the table horizontally scrollable -->
-    <script src="script.js"></script>
+    <script src="script.dist.js"></script>
   </body>
 </html>

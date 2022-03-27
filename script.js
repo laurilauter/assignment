@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       //remove red border from input if there is any
-      document.getElementById("input-word").classList.remove("red-border");
+      document.getElementById("input-word").classList.remove("alert");
+      document.getElementById("input-word").placeholder = "Type here..";
       document.querySelector("#true").checked = true;
       document.querySelector("#false").checked = false;
 
@@ -34,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         //input was empty, highlight border and display a message
         const inputElement = document.getElementById("input-word");
-        inputElement.placeholder = "Please insert something";
-        inputElement.classList.add("red-border");
+        inputElement.placeholder = "Input required!";
+        inputElement.classList.add("alert");
       }
       //clear input
       document.getElementById("input-word").value = "";
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       response.preventDefault();
 
       //remove red border from input if there is any
-      document.getElementById("input-word").classList.remove("red-border");
+      document.getElementById("input-word").classList.remove("alert");
       document.querySelector("#true").checked = true;
       document.querySelector("#false").checked = false;
       //clear input
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       response.preventDefault();
 
       //remove red border from input if there is any
-      document.getElementById("input-word").classList.remove("red-border");
+      document.getElementById("input-word").classList.remove("alert");
       document.querySelector("#true").checked = true;
       document.querySelector("#false").checked = false;
 
@@ -76,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       tests = [];
 
       //remove red border from input if there is any
-      document.getElementById("input-word").classList.remove("red-border");
+      document.getElementById("input-word").classList.remove("alert");
       document.querySelector('input[name="assumption"]:checked');
       //clear input
       document.getElementById("input-word").value = "";

@@ -1,3 +1,8 @@
+div,
+h2 {
+  border: 1px solid red;
+}
+
 /* General style */
 body {
   margin: 0;
@@ -10,10 +15,6 @@ body {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-}
-
-.margin-10 {
-  margin: 10px;
 }
 
 h1 {
@@ -150,7 +151,7 @@ th {
 
 /* Section style start */
 
-.section-style {
+section {
   margin: 10px;
   padding: 30px;
   background-color: rgb(143, 143, 143);
@@ -282,7 +283,7 @@ th {
   /* Table end */
   /* Section style start */
 
-  .section-style {
+  section {
     margin: 10px;
     padding: 20px;
     background-color: grey;

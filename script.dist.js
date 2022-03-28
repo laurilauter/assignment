@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //save original input for later
     var rawInserted = inserted; //remove special characters and set to lowercase
 
-    inserted = inserted.replace(/[^a-z0-9]+\s/, "").toLowerCase(); //test for palindrome
+    inserted = inserted.replace(/[^a-z0-9]*\s{*,}/, "").toLowerCase(); //test for palindrome
 
     function isPalindrome(inserted) {
       //reverse the string

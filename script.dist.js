@@ -69,7 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }); //check conditions and generate output
 
   function checkPalindrome(inserted, assumption) {
-    //remove special characters and set to lowercase
+    //save original input for later
+    var rawInserted = inserted; //remove special characters and set to lowercase
+
     inserted = inserted.replace(/[^a-z0-9]+/i, "").toLowerCase(); //test for palindrome
 
     function isPalindrome(inserted) {
@@ -94,17 +96,17 @@ document.addEventListener("DOMContentLoaded", function () {
     } //create object and push it to result
 
 
-    function createOutput(palindrome, assumption) {
+    function createOutput(palindrome, assumption, rawInserted) {
       var testCase = {
         no: tests.length + 1,
-        inputWord: inserted,
+        inputWord: rawInserted,
         verdict: compare(palindrome, assumption)
       }; //add current testcase to the output array
 
       tests.push(testCase);
     }
 
-    createOutput(palindrome, assumption);
+    createOutput(palindrome, assumption, rawInserted);
     drawTable(tests);
   } //draw table
 

@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkPalindrome(inserted, assumption) {
     //remove special characters and set to lowercase
-    inserted = inserted.replace(/[^a-z0-9]+/i, "").toLowerCase(); //test for palindrome
+    inserted = inserted.replace(/[^a-z0-9]*$/g, "").toLowerCase(); //test for palindrome
 
     function isPalindrome(inserted) {
       //reverse the string

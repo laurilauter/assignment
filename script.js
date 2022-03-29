@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //save original input for later
     const rawInserted = inserted;
     //remove special characters and set to lowercase
-    inserted = inserted.replace(/[^a-z0-9]*\s{*,}/, "").toLowerCase();
+    inserted = inserted.replace(/[^a-z0-9]*\s/, "").toLowerCase();
 
     //test for palindrome
     function isPalindrome(inserted) {

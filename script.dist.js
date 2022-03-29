@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function drawTable(tests) {
     // select table element
-    var table = document.querySelector("table"); //clear table
+    var table = document.querySelector("tbody"); //clear table
 
     clearTable(table); //create and populate table elements
 
@@ -121,8 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var row = document.createElement("tr");
       Object.values(test).forEach(function (text) {
         var cell = document.createElement("td");
-        var textNode = document.createTextNode(text);
-        cell.appendChild(textNode);
+        cell.innerHTML = text;
         row.appendChild(cell);
       });
       table.appendChild(row); //paint cell green or red

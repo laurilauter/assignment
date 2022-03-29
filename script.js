@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function checkPalindrome(inserted, assumption) {
     //save original input for later
     const rawInserted = inserted;
+
     //remove special characters and set to lowercase
     inserted = inserted.replace(/[^a-z0-9]*\s/, "").toLowerCase();
 
@@ -133,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //draw table
   function drawTable(tests) {
     // select table element
-    let table = document.querySelector("table");
+    let table = document.querySelector("tbody");
     //clear table
     clearTable(table);
 
@@ -142,8 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let row = document.createElement("tr");
       Object.values(test).forEach((text) => {
         let cell = document.createElement("td");
-        let textNode = document.createTextNode(text);
-        cell.appendChild(textNode);
+        cell.innerHTML = text;
         row.appendChild(cell);
       });
 

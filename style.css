@@ -118,6 +118,7 @@ table {
   border-radius: 0.25em;
   overflow: hidden;
   width: 100%;
+  white-space: pre-wrap;
 }
 
 th,
